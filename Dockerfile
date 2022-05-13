@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:alpine
+FROM public.ecr.aws/lts/ubuntu:latest
 RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
 VOLUME /tmp
